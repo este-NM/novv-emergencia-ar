@@ -1,0 +1,32 @@
+NOVV — Primera prueba de emergencia
+
+PUBLICACIÓN INDEPENDIENTE
+Crear un repositorio nuevo llamado novv-emergencia-ar. Subir el contenido
+de esta carpeta (index.html, app.js, effect.js, style.css, assets y vendor)
+a la raíz. Activar GitHub Pages para la rama correspondiente y carpeta raíz.
+La dirección esperada para este-nm será:
+https://este-nm.github.io/novv-emergencia-ar/
+Este paquete todavía no está publicado.
+
+PRUEBA EN IPHONE
+Abrir la dirección HTTPS en Safari. El mapa señala el sector superior derecho.
+Pulsar Explorar en AR, permitir cámara y encuadrar ese sector con contexto.
+Después de 0,8 segundos de reconocimiento comienza una formación de 6 segundos.
+La figura permanece al terminar. Si se pierde el sector, se oculta el overlay
+y se conserva el progreso para continuar cuando se vuelva a reconocer.
+Se puede pausar, repetir o volver a los trazos.
+
+COMPROBAR EN EL ACRÍLICO
+1. Alineación del ser con las curvas impresas.
+2. Acercamiento gradual, conservando suficientes trazos alrededor en cámara.
+3. Cambios de ángulo y reflejos.
+4. El sector simétrico izquierdo no debe activar la figura incorrectamente.
+Estos puntos requieren prueba física: la verificación local no los garantiza.
+
+ARCHIVOS
+El recorte de fondo y del ser usa el mismo rectángulo en ambos originales.
+assets/alignment.json documenta las coordenadas originales y la reducción.
+El target se compiló desde el recorte del print, sin incluir el ser.
+En AR no se dibuja la imagen de fondo. El acrílico es el fondo real.
+effect.js contiene formationSeconds y dwellSeconds para ajustar los tiempos.
+Los originales suministrados no fueron modificados.
