@@ -1,4 +1,26 @@
-NOVV — Primera prueba de emergencia
+NOVV — Emergencia 02: cuatro seres, centralidad y presencia
+
+ACTUALIZAR EL REPOSITORIO EXISTENTE
+Subir TODO el contenido de esta carpeta a la raíz de novv-emergencia-ar,
+reemplazando los archivos del mismo nombre. No subir el ZIP ni la carpeta
+exterior. Mantener las carpetas assets y vendor con sus rutas internas.
+Es imprescindible actualizar assets/target.mind, sector.jpg y alignment.json:
+el sector ahora es más amplio para incluir al ser 4.
+También se agregaron attention.js y assets/ser-1.png a ser-4.png.
+La dirección publicada se mantiene. Esta actualización todavía no se subió.
+
+COMPORTAMIENTO
+El centro del encuadre AR activa la formación tras una permanencia de 0,65 s.
+Cada cuerpo se forma en 6 s. Ser 3 comienza sólo después de completar ser 2,
+tarda otros 3 s y comparte su presencia; no tiene activación independiente.
+Al retirarse, el torso se desvanece antes que el cuerpo que lo sostiene.
+Fuera del centro, los seres formados conservan presencia secundaria y memoria
+breve antes de disolverse. Perder tracking congela su estado y oculta el plano.
+La opacidad base es 0,62, con pulsación relativa de hasta +/-8,5% a 0,24 Hz.
+2 y 3 comparten la fase de esa pulsación. No hay desplazamiento geométrico.
+En la vista previa, cursor/toque dirige la atención; los botones seleccionan
+1, 2+3 o 4. El control manual respeta también la secuencia 2 -> 3.
+Los parámetros editables están en attention.js.
 
 PUBLICACIÓN INDEPENDIENTE
 Crear un repositorio nuevo llamado novv-emergencia-ar. Subir el contenido
@@ -11,8 +33,8 @@ Este paquete todavía no está publicado.
 PRUEBA EN IPHONE
 Abrir la dirección HTTPS en Safari. El mapa señala el sector superior derecho.
 Pulsar Explorar en AR, permitir cámara y encuadrar ese sector con contexto.
-Después de 0,8 segundos de reconocimiento comienza una formación de 6 segundos.
-La figura permanece al terminar. Si se pierde el sector, se oculta el overlay
+Después de sostener un ser cerca del centro comienza su formación.
+Si se pierde el sector, se oculta el overlay
 y se conserva el progreso para continuar cuando se vuelva a reconocer.
 Se puede pausar, repetir o volver a los trazos.
 
@@ -28,5 +50,5 @@ El recorte de fondo y del ser usa el mismo rectángulo en ambos originales.
 assets/alignment.json documenta las coordenadas originales y la reducción.
 El target se compiló desde el recorte del print, sin incluir el ser.
 En AR no se dibuja la imagen de fondo. El acrílico es el fondo real.
-effect.js contiene formationSeconds y dwellSeconds para ajustar los tiempos.
+attention.js contiene los tiempos, la centralidad, la opacidad y la pulsación.
 Los originales suministrados no fueron modificados.

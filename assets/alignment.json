@@ -1,22 +1,63 @@
 {
+  "version": 2,
   "originalSize": [
     12600,
     8910
   ],
   "crop": [
-    8800,
-    400,
-    10800,
-    2900
+    8000,
+    300,
+    10500,
+    3100
   ],
   "sectorSize": [
-    1200,
-    1500
+    1250,
+    1400
   ],
-  "beingBounds": [
-    9449,
-    885,
-    10041,
-    2269
+  "figures": [
+    {
+      "id": 1,
+      "file": "ser-1.png",
+      "bounds": [
+        9441,
+        877,
+        10049,
+        2277
+      ],
+      "dependsOn": null
+    },
+    {
+      "id": 2,
+      "file": "ser-2.png",
+      "bounds": [
+        9206,
+        1844,
+        9754,
+        2771
+      ],
+      "dependsOn": null
+    },
+    {
+      "id": 3,
+      "file": "ser-3.png",
+      "bounds": [
+        8895,
+        1377,
+        9477,
+        2072
+      ],
+      "dependsOn": 2
+    },
+    {
+      "id": 4,
+      "file": "ser-4.png",
+      "bounds": [
+        8443,
+        587,
+        9139,
+        1577
+      ],
+      "dependsOn": null
+    }
   ]
 }
