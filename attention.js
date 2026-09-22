@@ -1,9 +1,9 @@
 // Shared timings and presence controls for preview and AR.
 export const settings = {
-  formationSeconds: 6, torsoSeconds: 3, dwellSeconds: 0.65,
-  memorySeconds: 9, dissolveSeconds: 5, focusRadius: 0.40,
-  opacity: 0.62, pulseDepth: 0.085, pulseFrequency: 0.24,
-  secondaryPresence: 0.25,
+  formationSeconds: 6, torsoSeconds: 3, dwellSeconds: 0.20,
+  memorySeconds: 9, dissolveSeconds: 5, focusRadius: 0.65,
+  opacity: 0.87, pulseDepth: 0.085, pulseFrequency: 0.24,
+  secondaryPresence: 0.40,
 };
 export const clamp = (v, a=0, b=1) => Math.min(b,Math.max(a,v));
 export function centrality(x,y,focusX,focusY,shortSide) {
