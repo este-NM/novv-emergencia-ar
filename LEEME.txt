@@ -1,54 +1,60 @@
-NOVV — Emergencia 02: cuatro seres, centralidad y presencia
+NOVV — Recorrido continuo 04 · obra completa por presión
 
-ACTUALIZAR EL REPOSITORIO EXISTENTE
-Subir TODO el contenido de esta carpeta a la raíz de novv-emergencia-ar,
-reemplazando los archivos del mismo nombre. No subir el ZIP ni la carpeta
-exterior. Mantener las carpetas assets y vendor con sus rutas internas.
-Es imprescindible actualizar assets/target.mind, sector.jpg y alignment.json:
-el sector ahora es más amplio para incluir al ser 4.
-También se agregaron attention.js y assets/ser-1.png a ser-4.png.
-La dirección publicada se mantiene. Esta actualización todavía no se subió.
+PUBLICACIÓN
+Descomprimir novv-emergencia-v4.zip. Subir el CONTENIDO de novv-emergencia-ar
+a la raíz de este-NM/novv-emergencia-ar, reemplazando archivos del mismo nombre.
+No subir el ZIP ni agregar una carpeta exterior. Subir assets/atlas.mind y
+assets/atlas.json junto con el código y complete.png. No se publicó automáticamente.
+Enlace después de publicar: https://este-nm.github.io/novv-emergencia-ar/?v=4
+No afecta obra-ar-demo ni los otros proyectos.
 
-COMPORTAMIENTO
-El centro del encuadre AR activa la formación tras una permanencia de 0,65 s.
-Cada cuerpo se forma en 6 s. Ser 3 comienza sólo después de completar ser 2,
-tarda otros 3 s y comparte su presencia; no tiene activación independiente.
-Al retirarse, el torso se desvanece antes que el cuerpo que lo sostiene.
-Fuera del centro, los seres formados conservan presencia secundaria y memoria
-breve antes de disolverse. Perder tracking congela su estado y oculta el plano.
-La opacidad base es 0,62, con pulsación relativa de hasta +/-8,5% a 0,24 Hz.
-2 y 3 comparten la fase de esa pulsación. No hay desplazamiento geométrico.
-En la vista previa, cursor/toque dirige la atención; los botones seleccionan
-1, 2+3 o 4. El control manual respeta también la secuencia 2 -> 3.
-Los parámetros editables están en attention.js.
+USO
+Abrir en Safari, entrar en AR y permitir la cámara. Apuntar al print original.
+Mantener presionada la pantalla: cerca se forman las zonas próximas al centro
+del encuadre; moviendo el teléfono el campo de activación recorre la obra.
+Al encuadrar toda la obra (con algo de margen) y mantener presionado, se activa
+el conjunto. No hace falta navegar por seres ni mostrar una cuadrícula.
+Al soltar se disuelve. Si se pierde completamente el reconocimiento se oculta
+la capa y se cancela la presión: volver a presionar al recuperar la imagen.
+La formación pertenece al mapa global: cambiar de referencia no la duplica.
 
-PUBLICACIÓN INDEPENDIENTE
-Crear un repositorio nuevo llamado novv-emergencia-ar. Subir el contenido
-de esta carpeta (index.html, app.js, effect.js, style.css, assets y vendor)
-a la raíz. Activar GitHub Pages para la rama correspondiente y carpeta raíz.
-La dirección esperada para este-nm será:
-https://este-nm.github.io/novv-emergencia-ar/
-Este paquete todavía no está publicado.
+VISTA PREVIA
+Mantener clic y mover cursor. Obra completa / Probar de cerca cambian el encuadre.
+La rueda acerca hacia el cursor y permite explorar distintas partes.
+El fondo digital sólo existe en la vista previa. En AR el fondo es la cámara.
 
-PRUEBA EN IPHONE
-Abrir la dirección HTTPS en Safari. El mapa señala el sector superior derecho.
-Pulsar Explorar en AR, permitir cámara y encuadrar ese sector con contexto.
-Después de sostener un ser cerca del centro comienza su formación.
-Si se pierde el sector, se oculta el overlay
-y se conserva el progreso para continuar cuando se vuelva a reconocer.
-Se puede pausar, repetir o volver a los trazos.
+CONFIGURACIÓN
+activation.js: formationSeconds (3.5), torsoSeconds (2.5), releaseSeconds (3),
+trailSeconds (7), focusRadius (0.65), opacity (0.85), pulseDepth (0.065),
+pulseFrequency (0.24 Hz).
+complete-effect.js: revelado progresivo, brillo del frente y presencia pulsante.
+No hay escalado ni desplazamiento animado de la imagen respecto del print.
 
-COMPROBAR EN EL ACRÍLICO
-1. Alineación del ser con las curvas impresas.
-2. Acercamiento gradual, conservando suficientes trazos alrededor en cámara.
-3. Cambios de ángulo y reflejos.
-4. El sector simétrico izquierdo no debe activar la figura incorrectamente.
-Estos puntos requieren prueba física: la verificación local no los garantiza.
+ARCHIVO COMPLETO Y POSICIONES
+El PNG original de 12600 x 8910 está intacto fuera del paquete. Para el teléfono
+se derivó complete.png de 4096 x 2896, conservando proporciones, RGB y alpha
+mediante remuestreo. No se eliminó negro ni se agregó fondo.
+Conserva el aspecto plateado y también los residuos semitransparentes de la fuente.
+Una sola capa dibuja la obra; los cuatro PNG anteriores NO se superponen otra vez.
+La secuencia 2 -> 3 se conserva usando sus áreas conocidas en el mapa: primero
+el cuerpo, después el torso; al disolverse, el torso desaparece primero.
+Al ser una imagen aplanada, esa excepción es espacial, no una separación perfecta
+por silueta: puede afectar trazos dentro de esas dos áreas. Para dependencias
+individuales exactas o seres superpuestos nuevos harán falta capas/máscaras.
 
-ARCHIVOS
-El recorte de fondo y del ser usa el mismo rectángulo en ambos originales.
-assets/alignment.json documenta las coordenadas originales y la reducción.
-El target se compiló desde el recorte del print, sin incluir el ser.
-En AR no se dibuja la imagen de fondo. El acrílico es el fondo real.
-attention.js contiene los tiempos, la centralidad, la opacidad y la pulsación.
-Los originales suministrados no fueron modificados.
+RECONOCIMIENTO
+12 sectores solapados (4 x 3), una referencia de detalle y una referencia general
+de la obra impresa. Total 14, hasta 2 seguidas a la vez. Todas localizan el mismo
+plano. Las referencias se basan en el print, NO en los seres nuevos.
+La vista general depende del encuadre proyectado de la obra, no de medir metros.
+
+VERIFICADO LOCALMENTE
+Formación local/global, ausencia de activación sin presión, disolución,
+dependencia temporal 2 -> 3, alpha del canvas final, 14 referencias compiladas,
+coordenadas compartidas y cambios de referencia sin duplicación.
+
+PENDIENTE EN IPHONE / ACRÍLICO
+Comprobar reconocimiento regional y general, reflejos, regiones simétricas,
+fluidez, claridad de los detalles al acercarse y presión sostenida en Safari.
+No se garantiza seguimiento a centímetros: depende de enfoque, iluminación
+y cantidad de trazos visibles. La prueba de escritorio no sustituye esta prueba.

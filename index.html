@@ -1,16 +1,19 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Novv · seres en los trazos</title><link rel="icon" href="data:,">
-<link rel="stylesheet" href="style.css?v=2">
+<title>Novv · la obra emerge</title><link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css?v=4">
 <script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
 </head><body><main>
-<header><span class="eyebrow">NOVV / ESTUDIO DE EMERGENCIA 02</span><h1>Seres en los trazos</h1><p>Recorrer. Detenerse. Dejar que aparezcan.</p></header>
-<div class="layout"><section class="art"><div id="preview" aria-label="Sector ampliado de la obra: mové el cursor o tocá para dirigir la atención"><span id="focus" aria-hidden="true"></span></div><span id="phase">Trazos</span></section>
-<aside><div class="controls"><span class="eyebrow">PRESENCIAS · CENTRALIDAD</span><h2 id="title">Donde se detiene la mirada</h2><p id="status" role="status">Cargando el sector…</p>
-<div class="groups" aria-label="Dirigir la atención"><button data-group="1" aria-pressed="true">Ser 1<small id="state-1">En los trazos</small></button><button data-group="2" aria-pressed="false">Seres 2 + 3<small id="state-2">En los trazos</small></button><button data-group="4" aria-pressed="false">Ser 4<small id="state-4">En los trazos</small></button></div>
-<label for="progress">Formación del grupo seleccionado <output id="value">0 %</output></label><input id="progress" type="range" min="0" max="100" value="0" step="0.1">
-<div class="buttons"><button id="play">Pausar recorrido</button><button id="reset">Volver a los trazos</button></div>
-<button id="start" class="primary" disabled>Explorar en AR</button><button id="stop" hidden>Volver a la vista previa</button>
-<p id="error" role="alert" hidden></p></div>
-<div class="guide"><span class="eyebrow">DÓNDE MIRAR</span><div class="map"><img src="assets/obra.jpg" alt="Obra completa. El sector está en la parte superior derecha."><span class="region"></span></div><p>En AR, el centro de la pantalla dirige la atención. Encuadrá esta región con sus trazos y recorré las figuras suavemente.</p><p class="note">El 2 se forma primero; el torso 3 se incorpora después y comparte su presencia. Las figuras respiran con transparencia.</p></div></aside></div>
-</main><div id="ar" hidden></div><div id="tracking" hidden>Buscando el sector derecho…</div><script type="module" src="app.js?v=2"></script></body></html>
+<header><span class="eyebrow">NOVV / RECORRIDO CONTINUO 04</span><h1>La obra emerge</h1><p>Sostener. Recorrer. Dejar aparecer.</p></header>
+<div class="layout"><section class="art"><div id="preview" aria-label="Obra interactiva: mantené presionado y mové el cursor para revelar"><span id="focus" aria-hidden="true"></span></div><span id="phase">Preparando la obra…</span></section>
+<aside><div class="controls"><span class="eyebrow">DEL TRAZO A LA PRESENCIA</span><h2>Una mirada que hace aparecer</h2><p id="status" role="status">Preparando el recorrido…</p>
+<button id="start" class="primary" disabled>Entrar en la obra · AR</button>
+<p>De cerca, la formación acompaña el centro de tu encuadre. De lejos, con toda la obra visible, se extiende a todos los seres. Siempre manteniendo presionada la pantalla.</p>
+<p class="note">Al soltar, las presencias se disuelven. No hace falta cambiar de menú ni elegir una región.</p>
+<div class="buttons views"><button id="overview">Obra completa</button><button id="detail">Probar de cerca</button></div>
+<p class="note">Vista previa: mantené el clic y recorré con el mouse. La rueda acerca hacia el cursor; alejando volvés al conjunto.</p>
+<button id="reset">Volver a los trazos</button>
+<p id="error" role="alert" hidden></p></div></aside></div>
+</main><div id="ar" hidden></div><div id="tracking" hidden>Recorré la obra despacio, dejando algunos trazos en el encuadre</div>
+<button id="stop" hidden aria-label="Salir de la cámara">×</button>
+<script type="module" src="app.js?v=4"></script></body></html>

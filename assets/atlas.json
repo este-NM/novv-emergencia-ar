@@ -1,0 +1,462 @@
+{
+  "version": 4,
+  "physicalSizeCm": [
+    112,
+    80
+  ],
+  "originalSize": [
+    12600,
+    8910
+  ],
+  "grid": {
+    "columns": 4,
+    "rows": 3,
+    "marginFraction": 0.18
+  },
+  "regions": [
+    {
+      "id": "r1c1",
+      "index": 0,
+      "kind": "grid",
+      "core": [
+        0,
+        0,
+        3150,
+        2970
+      ],
+      "crop": [
+        0,
+        0,
+        3717,
+        3505
+      ],
+      "file": "regions/r1c1.jpg",
+      "targetSize": [
+        850,
+        802
+      ],
+      "figures": [],
+      "physicalSizeCm": [
+        33.04,
+        31.47
+      ]
+    },
+    {
+      "id": "r1c2",
+      "index": 1,
+      "kind": "grid",
+      "core": [
+        3150,
+        0,
+        6300,
+        2970
+      ],
+      "crop": [
+        2583,
+        0,
+        6867,
+        3505
+      ],
+      "file": "regions/r1c2.jpg",
+      "targetSize": [
+        850,
+        695
+      ],
+      "figures": [],
+      "physicalSizeCm": [
+        38.08,
+        31.47
+      ]
+    },
+    {
+      "id": "r1c3",
+      "index": 2,
+      "kind": "grid",
+      "core": [
+        6300,
+        0,
+        9450,
+        2970
+      ],
+      "crop": [
+        5733,
+        0,
+        10017,
+        3505
+      ],
+      "file": "regions/r1c3.jpg",
+      "targetSize": [
+        850,
+        695
+      ],
+      "figures": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "physicalSizeCm": [
+        38.08,
+        31.47
+      ]
+    },
+    {
+      "id": "r1c4",
+      "index": 3,
+      "kind": "grid",
+      "core": [
+        9450,
+        0,
+        12600,
+        2970
+      ],
+      "crop": [
+        8883,
+        0,
+        12600,
+        3505
+      ],
+      "file": "regions/r1c4.jpg",
+      "targetSize": [
+        850,
+        802
+      ],
+      "figures": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "physicalSizeCm": [
+        33.04,
+        31.47
+      ]
+    },
+    {
+      "id": "r2c1",
+      "index": 4,
+      "kind": "grid",
+      "core": [
+        0,
+        2970,
+        3150,
+        5940
+      ],
+      "crop": [
+        0,
+        2435,
+        3717,
+        6475
+      ],
+      "file": "regions/r2c1.jpg",
+      "targetSize": [
+        782,
+        850
+      ],
+      "figures": [],
+      "physicalSizeCm": [
+        33.04,
+        36.27
+      ]
+    },
+    {
+      "id": "r2c2",
+      "index": 5,
+      "kind": "grid",
+      "core": [
+        3150,
+        2970,
+        6300,
+        5940
+      ],
+      "crop": [
+        2583,
+        2435,
+        6867,
+        6475
+      ],
+      "file": "regions/r2c2.jpg",
+      "targetSize": [
+        850,
+        802
+      ],
+      "figures": [],
+      "physicalSizeCm": [
+        38.08,
+        36.27
+      ]
+    },
+    {
+      "id": "r2c3",
+      "index": 6,
+      "kind": "grid",
+      "core": [
+        6300,
+        2970,
+        9450,
+        5940
+      ],
+      "crop": [
+        5733,
+        2435,
+        10017,
+        6475
+      ],
+      "file": "regions/r2c3.jpg",
+      "targetSize": [
+        850,
+        802
+      ],
+      "figures": [
+        2
+      ],
+      "physicalSizeCm": [
+        38.08,
+        36.27
+      ]
+    },
+    {
+      "id": "r2c4",
+      "index": 7,
+      "kind": "grid",
+      "core": [
+        9450,
+        2970,
+        12600,
+        5940
+      ],
+      "crop": [
+        8883,
+        2435,
+        12600,
+        6475
+      ],
+      "file": "regions/r2c4.jpg",
+      "targetSize": [
+        782,
+        850
+      ],
+      "figures": [
+        2
+      ],
+      "physicalSizeCm": [
+        33.04,
+        36.27
+      ]
+    },
+    {
+      "id": "r3c1",
+      "index": 8,
+      "kind": "grid",
+      "core": [
+        0,
+        5940,
+        3150,
+        8910
+      ],
+      "crop": [
+        0,
+        5405,
+        3717,
+        8910
+      ],
+      "file": "regions/r3c1.jpg",
+      "targetSize": [
+        850,
+        802
+      ],
+      "figures": [],
+      "physicalSizeCm": [
+        33.04,
+        31.47
+      ]
+    },
+    {
+      "id": "r3c2",
+      "index": 9,
+      "kind": "grid",
+      "core": [
+        3150,
+        5940,
+        6300,
+        8910
+      ],
+      "crop": [
+        2583,
+        5405,
+        6867,
+        8910
+      ],
+      "file": "regions/r3c2.jpg",
+      "targetSize": [
+        850,
+        695
+      ],
+      "figures": [],
+      "physicalSizeCm": [
+        38.08,
+        31.47
+      ]
+    },
+    {
+      "id": "r3c3",
+      "index": 10,
+      "kind": "grid",
+      "core": [
+        6300,
+        5940,
+        9450,
+        8910
+      ],
+      "crop": [
+        5733,
+        5405,
+        10017,
+        8910
+      ],
+      "file": "regions/r3c3.jpg",
+      "targetSize": [
+        850,
+        695
+      ],
+      "figures": [],
+      "physicalSizeCm": [
+        38.08,
+        31.47
+      ]
+    },
+    {
+      "id": "r3c4",
+      "index": 11,
+      "kind": "grid",
+      "core": [
+        9450,
+        5940,
+        12600,
+        8910
+      ],
+      "crop": [
+        8883,
+        5405,
+        12600,
+        8910
+      ],
+      "file": "regions/r3c4.jpg",
+      "targetSize": [
+        850,
+        802
+      ],
+      "figures": [],
+      "physicalSizeCm": [
+        33.04,
+        31.47
+      ]
+    },
+    {
+      "id": "detail-01",
+      "index": 12,
+      "kind": "detail",
+      "crop": [
+        8000,
+        300,
+        10500,
+        3100
+      ],
+      "file": "regions/detail-01.jpg",
+      "targetSize": [
+        759,
+        850
+      ],
+      "figures": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "physicalSizeCm": [
+        22.22,
+        25.14
+      ]
+    },
+    {
+      "id": "whole",
+      "index": 13,
+      "kind": "whole",
+      "crop": [
+        0,
+        0,
+        12600,
+        8910
+      ],
+      "file": "regions/whole.jpg",
+      "targetSize": [
+        1000,
+        707
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "file": "ser-1.png",
+      "bounds": [
+        9441,
+        877,
+        10049,
+        2277
+      ],
+      "dependsOn": null
+    },
+    {
+      "id": 2,
+      "file": "ser-2.png",
+      "bounds": [
+        9206,
+        1844,
+        9754,
+        2771
+      ],
+      "dependsOn": null
+    },
+    {
+      "id": 3,
+      "file": "ser-3.png",
+      "bounds": [
+        8895,
+        1377,
+        9477,
+        2072
+      ],
+      "dependsOn": 2
+    },
+    {
+      "id": 4,
+      "file": "ser-4.png",
+      "bounds": [
+        8443,
+        587,
+        9139,
+        1577
+      ],
+      "dependsOn": null
+    }
+  ],
+  "previewCrop": [
+    8000,
+    300,
+    10500,
+    3100
+  ],
+  "targetFile": "atlas.mind",
+  "overlay": {
+    "file": "complete.png",
+    "size": [
+      4096,
+      2896
+    ],
+    "originalSize": [
+      12600,
+      8910
+    ]
+  }
+}
